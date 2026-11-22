@@ -1,4 +1,4 @@
-from main import process_repositories,fetch_repositories,save_repositories
+from src.pipeline import process_repositories,fetch_repositories,save_repositories
 import pytest
 from unittest.mock import Mock, patch
 import requests
@@ -159,7 +159,7 @@ def test_fetch_repositories_success():
         ]
     }
 
-    with patch('main.requests.get',return_value = mock_response) as mock_get:
+    with patch('src.pipeline.requests.get',return_value = mock_response) as mock_get:
 
         result = fetch_repositories()
 
@@ -176,7 +176,7 @@ def test_fetch_repositories_error():
 
     mock_response.raise_for_status.side_effect = requests.exceptions.HTTPError
 
-    with patch('main.requests.get',return_value = mock_response):
+    with patch('src.pipeline.requests.get',return_value = mock_response):
 
         result = fetch_repositories()
 
@@ -184,7 +184,7 @@ def test_fetch_repositories_error():
 
 def test_fetch_repositories_connection_error():
 
-    with patch('main.requests.get',side_effect = requests.exceptions.ConnectionError):
+    with patch('src.pipeline.requests.get',side_effect = requests.exceptions.ConnectionError):
 
         result = fetch_repositories()
 
@@ -200,7 +200,7 @@ def test_fetch_repositories_invalid_json():
         'JSON Inválido','',0
     )
 
-    with patch('main.requests.get',return_value = mock_response):
+    with patch('src.pipeline.requests.get',return_value = mock_response):
 
         result = fetch_repositories()
 

@@ -3,210 +3,210 @@
         "name": "public-apis",
         "full_name": "public-apis/public-apis",
         "language": "Python",
-        "stars": 500464,
-        "forks": 56184
+        "stars": 500807,
+        "forks": 56245
     },
     {
         "name": "free-programming-books",
         "full_name": "EbookFoundation/free-programming-books",
         "language": "Python",
-        "stars": 401945,
-        "forks": 67925
+        "stars": 402078,
+        "forks": 67231
     },
     {
         "name": "system-design-primer",
         "full_name": "donnemartin/system-design-primer",
         "language": "Python",
-        "stars": 378638,
-        "forks": 59339
+        "stars": 378802,
+        "forks": 59337
     },
     {
         "name": "awesome-python",
         "full_name": "vinta/awesome-python",
         "language": "Python",
-        "stars": 336021,
-        "forks": 29140
+        "stars": 336441,
+        "forks": 29139
     },
     {
         "name": "project-based-learning",
         "full_name": "practical-tutorials/project-based-learning",
         "language": "Python",
-        "stars": 290091,
-        "forks": 36856
+        "stars": 290271,
+        "forks": 36855
     },
     {
         "name": "hermes-agent",
         "full_name": "NousResearch/hermes-agent",
         "language": "Python",
-        "stars": 264932,
-        "forks": 59866
+        "stars": 265372,
+        "forks": 59997
     },
     {
         "name": "Python",
         "full_name": "TheAlgorithms/Python",
         "language": "Python",
-        "stars": 226342,
-        "forks": 51351
+        "stars": 226387,
+        "forks": 51340
     },
     {
         "name": "yt-dlp",
         "full_name": "yt-dlp/yt-dlp",
         "language": "Python",
-        "stars": 209374,
-        "forks": 18502
+        "stars": 209921,
+        "forks": 18556
     },
     {
         "name": "skills",
         "full_name": "anthropics/skills",
         "language": "Python",
-        "stars": 197972,
-        "forks": 23185
+        "stars": 198902,
+        "forks": 23280
     },
     {
         "name": "markitdown",
         "full_name": "microsoft/markitdown",
         "language": "Python",
-        "stars": 197215,
-        "forks": 14934
+        "stars": 197833,
+        "forks": 14978
     },
     {
         "name": "HelloGitHub",
         "full_name": "521xueweihan/HelloGitHub",
         "language": "Python",
-        "stars": 190195,
-        "forks": 13352
+        "stars": 190562,
+        "forks": 13356
     },
     {
         "name": "AutoGPT",
         "full_name": "Significant-Gravitas/AutoGPT",
         "language": "Python",
-        "stars": 188116,
-        "forks": 45848
+        "stars": 188135,
+        "forks": 45826
     },
     {
         "name": "transformers",
         "full_name": "huggingface/transformers",
         "language": "Python",
-        "stars": 169323,
-        "forks": 35259
+        "stars": 169391,
+        "forks": 35265
     },
     {
         "name": "stable-diffusion-webui",
         "full_name": "AUTOMATIC1111/stable-diffusion-webui",
         "language": "Python",
-        "stars": 165366,
-        "forks": 31094
+        "stars": 165369,
+        "forks": 31082
     },
     {
         "name": "dify",
         "full_name": "langgenius/dify",
         "language": "Python",
-        "stars": 161571,
-        "forks": 25549
+        "stars": 161682,
+        "forks": 25536
     },
     {
         "name": "langflow",
         "full_name": "langflow-ai/langflow",
         "language": "Python",
-        "stars": 156805,
-        "forks": 10440
+        "stars": 156846,
+        "forks": 10431
     },
     {
         "name": "ui-ux-pro-max-skill",
         "full_name": "nextlevelbuilder/ui-ux-pro-max-skill",
         "language": "Python",
-        "stars": 152090,
-        "forks": 16058
+        "stars": 152780,
+        "forks": 16106
     },
     {
         "name": "graphify",
         "full_name": "Graphify-Labs/graphify",
         "language": "Python",
-        "stars": 151043,
-        "forks": 14539
+        "stars": 151932,
+        "forks": 14608
     },
     {
         "name": "spec-kit",
         "full_name": "github/spec-kit",
         "language": "Python",
-        "stars": 150799,
-        "forks": 13548
+        "stars": 151021,
+        "forks": 13562
     },
     {
         "name": "langchain",
         "full_name": "langchain-ai/langchain",
         "language": "Python",
-        "stars": 149968,
-        "forks": 25163
+        "stars": 149982,
+        "forks": 25157
     },
     {
         "name": "ComfyUI",
         "full_name": "Comfy-Org/ComfyUI",
         "language": "Python",
-        "stars": 147810,
-        "forks": 17670
+        "stars": 148120,
+        "forks": 17639
     },
     {
         "name": "awesome-llm-apps",
         "full_name": "Shubhamsaboo/awesome-llm-apps",
         "language": "Python",
-        "stars": 145190,
-        "forks": 21383
+        "stars": 145411,
+        "forks": 21403
     },
     {
         "name": "MoneyPrinterTurbo",
         "full_name": "harry0703/MoneyPrinterTurbo",
         "language": "Python",
-        "stars": 144811,
-        "forks": 23291
+        "stars": 145076,
+        "forks": 23335
     },
     {
         "name": "youtube-dl",
         "full_name": "ytdl-org/youtube-dl",
         "language": "Python",
-        "stars": 141619,
-        "forks": 10686
+        "stars": 141637,
+        "forks": 10672
     },
     {
         "name": "hello-algo",
         "full_name": "krahets/hello-algo",
         "language": "Python",
-        "stars": 132501,
-        "forks": 15636
+        "stars": 132586,
+        "forks": 15629
     },
     {
         "name": "TradingAgents",
         "full_name": "TauricResearch/TradingAgents",
         "language": "Python",
-        "stars": 123263,
-        "forks": 23638
+        "stars": 123474,
+        "forks": 23652
     },
     {
         "name": "browser-use",
         "full_name": "browser-use/browser-use",
         "language": "Python",
-        "stars": 121604,
-        "forks": 13597
+        "stars": 121753,
+        "forks": 13601
     },
     {
         "name": "VoiceStudio",
         "full_name": "debpalash/VoiceStudio",
         "language": "Python",
-        "stars": 115304,
-        "forks": 12831
+        "stars": 116411,
+        "forks": 12958
     },
     {
         "name": "sherlock",
         "full_name": "sherlock-project/sherlock",
         "language": "Python",
-        "stars": 114935,
-        "forks": 13188
+        "stars": 115786,
+        "forks": 13241
     },
     {
         "name": "Agent-Reach",
         "full_name": "Panniantong/Agent-Reach",
         "language": "Python",
-        "stars": 113529,
-        "forks": 10200
+        "stars": 113969,
+        "forks": 10235
     }
 ]
