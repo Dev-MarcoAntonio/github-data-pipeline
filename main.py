@@ -1,5 +1,6 @@
 from src.pipeline import fetch_repositories, process_repositories, save_repositories
 from src.logging_config import setup_logging
+from src.database import save_repositories_to_db
 import logging
 
 def main():
@@ -13,6 +14,7 @@ def main():
 
         if processed_data:
             save_repositories(processed_data)
+            save_repositories_to_db(processed_data)
             logging.info('Pipeline executed successfully.')
 
         else:
