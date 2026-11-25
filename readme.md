@@ -16,6 +16,7 @@ Desenvolver um pipeline de dados aplicando conceitos de Engenharia de Dados, int
 - **Psycopg 3** — conexão e operações com o banco de dados.
 - **JSON** — armazenamento complementar dos dados processados.
 - **Pytest** — testes automatizados.
+- **Pytest-Cov** — análise da cobertura dos testes.
 - **Logging** — monitoramento e registro de eventos.
 - **Git e GitHub** — versionamento do projeto.
 
@@ -30,6 +31,7 @@ Desenvolver um pipeline de dados aplicando conceitos de Engenharia de Dados, int
 - Tratamento de erros e gerenciamento de transações.
 - Registro de eventos e erros utilizando Logging.
 - Testes automatizados com Pytest.
+- Análise de cobertura dos testes.
 
 ## Estrutura do projeto
 
@@ -38,10 +40,8 @@ github-data-pipeline/
 │
 ├── data/
 │   └── processed/
-│       └── repositories.json
 │
 ├── logs/
-│   └── pipeline.log
 │
 ├── src/
 │   ├── __init__.py
@@ -50,13 +50,18 @@ github-data-pipeline/
 │   └── logging_config.py
 │
 ├── tests/
-│   └── test_pipeline.py
+│   ├── test_pipeline.py
+│   ├── test_database.py
+│   ├── test_main.py
+│   └── test_logging_config.py
 │
 ├── main.py
 ├── requirements.txt
 ├── readme.md
 └── .gitignore
 ```
+
+Os diretórios `data/processed/` e `logs/` são utilizados para armazenar arquivos gerados durante a execução do pipeline.
 
 ## Configuração e execução
 
@@ -88,6 +93,12 @@ No Windows PowerShell:
 
 ```bash
 pip install -r requirements.txt
+```
+
+Para utilizar a análise de cobertura, instale também:
+
+```bash
+pip install pytest-cov
 ```
 
 ### 4. Configure o PostgreSQL
@@ -137,13 +148,31 @@ Os dados serão processados e armazenados em:
 - `data/processed/repositories.json`
 - Banco PostgreSQL, na tabela `repositories`.
 
-## Testes
+## Testes automatizados
 
-Para executar os testes automatizados:
+Para executar todos os testes:
 
 ```bash
-pytest
+python -m pytest
 ```
+
+Para executar os testes de um módulo específico:
+
+```bash
+python -m pytest tests/test_pipeline.py -v
+```
+
+### Cobertura dos testes
+
+Para executar os testes e visualizar a cobertura de código:
+
+```bash
+python -m pytest --cov=src --cov=main --cov-report=term-missing
+```
+
+**Cobertura atual: 99%**
+
+Os módulos `pipeline.py`, `database.py` e `logging_config.py` possuem 100% de cobertura.
 
 ## Funcionamento do pipeline
 
@@ -174,4 +203,4 @@ Cada repositório processado possui as seguintes informações:
 
 Estudante de Ciência da Computação na UNESC, interessado em Engenharia de Dados, Python e desenvolvimento de soluções envolvendo processamento e integração de dados.
 
-GitHub: [Dev-MarcoAntonio](https://github.com/Dev-MarcoAntonio)
+GitHub: https://github.com/Dev-MarcoAntonio
