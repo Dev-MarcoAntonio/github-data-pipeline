@@ -51,12 +51,18 @@ def save_repositories_to_db(repositories):
 
             logging.info('Repositories saved successfully.')
 
+            return True
+
         except psycopg.Error as error:
 
             logging.error(f'Failed to save repositories: {error}')
             connection.rollback()
+            return False
 
         finally:
             if cursor is not None:
                 cursor.close()
             connection.close()
+
+    else:
+        return False

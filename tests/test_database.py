@@ -55,7 +55,7 @@ def test_save_repositories_to_db_success():
         }
     ]
 
-        save_repositories_to_db(repositories)
+        result = save_repositories_to_db(repositories)
 
         mock_cursor.execute.assert_called_once()
         mock_connection.commit.assert_called_once()
@@ -63,6 +63,7 @@ def test_save_repositories_to_db_success():
         mock_cursor.close.assert_called_once()
         mock_connection.close.assert_called_once()
 
+        assert result is True
 
 def test_save_repositories_to_db_failure():
 
@@ -84,13 +85,15 @@ def test_save_repositories_to_db_failure():
         }
     ]
 
-        save_repositories_to_db(repositories)
+        result = save_repositories_to_db(repositories)
 
         mock_connection.rollback.assert_called_once()
         mock_connection.commit.assert_not_called()
 
         mock_cursor.close.assert_called_once()
         mock_connection.close.assert_called_once()
+
+        assert result is False
 
 def test_save_repositories_to_db_connection_failure():
 
@@ -106,6 +109,8 @@ def test_save_repositories_to_db_connection_failure():
             }
         ]
 
-        save_repositories_to_db(repositories)
+        result = save_repositories_to_db(repositories)
 
         mock_connect.assert_called_once()
+
+        assert result is False

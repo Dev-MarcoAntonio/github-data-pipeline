@@ -14,8 +14,13 @@ def main():
 
         if processed_data:
             save_repositories(processed_data)
-            save_repositories_to_db(processed_data)
-            logging.info('Pipeline executed successfully.')
+            success = save_repositories_to_db(processed_data)
+
+            if success:
+                logging.info('Pipeline executed successfully.')
+
+            else:
+                logging.error('Pipeline failed during database saving.')
 
         else:
             logging.warning('No valid repository found.')
